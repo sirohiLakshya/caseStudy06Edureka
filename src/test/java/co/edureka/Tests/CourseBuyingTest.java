@@ -9,11 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import javax.imageio.stream.FileCacheImageInputStream;
 import java.awt.*;
-import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 
 public class CourseBuyingTest {
@@ -27,7 +24,7 @@ public class CourseBuyingTest {
     String expectedPageTitle;
 
     @Test
-    public void buyingCourse() throws AWTException, InterruptedException, IOException {
+    public void courseBuyingTest() throws AWTException, InterruptedException, IOException {
         driver = new ChromeDriver();
         FileInputStream file = new FileInputStream("utils\\KeyWords.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
