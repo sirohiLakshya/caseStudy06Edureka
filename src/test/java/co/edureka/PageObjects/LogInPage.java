@@ -25,6 +25,7 @@ public class LogInPage {
     }
 
     public HomePage logInValidUser(String userEmailId, String password){
+        driver.manage().window().maximize();
         driver.findElement(buttonForLoginPopUp).click();
         driver.findElement(emailIdBox).sendKeys(userEmailId);
         driver.findElement(passwordBox).sendKeys(password);
