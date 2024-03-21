@@ -29,7 +29,7 @@ public class CourseBuyingTest {
     @Test
     public void buyingCourse() throws AWTException, InterruptedException, IOException {
         driver = new ChromeDriver();
-        FileInputStream file = new FileInputStream("\\Utils\\KeyWords.xlsx");
+        FileInputStream file = new FileInputStream("utils\\KeyWords.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheet("Sheet1");
 
